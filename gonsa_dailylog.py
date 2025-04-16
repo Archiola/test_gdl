@@ -6,6 +6,28 @@ from datetime import date
 st.set_page_config(page_title="공사일보 자동화 프로그램", layout="wide")
 st.title("📋 공사일보 자동화 프로그램 (v3.0)")
 
+footer_html = """
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+</style>
+<div class="footer">
+    © 2025 YourSiteName. Designed & Developed by YourName.
+</div>
+"""
+
+# 푸터 렌더링
+st.markdown(footer_html, unsafe_allow_html=True)
+
 # 세션 상태 초기화 (최초 실행 시)
 if "images" not in st.session_state:
     st.session_state.images = []
