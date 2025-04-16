@@ -21,7 +21,7 @@ footer_html = """
 }
 </style>
 <div class="footer">
-    © 2025 YourSiteName. Designed & Developed by YourName.
+    © 2025 공사일보 자동화. Designed & Developed by 민원규.
 </div>
 """
 
