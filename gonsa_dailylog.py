@@ -12,7 +12,7 @@ footer_html = """
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 70%;
     background-color: #f1f1f1;
     color: #333;
     text-align: center;
