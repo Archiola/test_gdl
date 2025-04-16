@@ -6,27 +6,33 @@ from datetime import date
 st.set_page_config(page_title="공사일보 자동화 프로그램", layout="wide")
 st.title("📋 공사일보 자동화 프로그램 (v3.0)")
 
+# 여백 추가로 콘텐츠가 푸터에 가려지지 않게 하기
+st.markdown("<div style='height: 60px;'></div>", unsafe_allow_html=True)
+
+# 고정 푸터
 footer_html = """
 <style>
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 70%;
-    background-color: #f1f1f1;
-    color: #333;
+    width: 100%;
+    background-color: #fafafa;
+    color: #888;
     text-align: center;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 13px;
+    border-top: 1px solid #eaeaea;
+    z-index: 100;
 }
 </style>
 <div class="footer">
-    © 2025 공사일보 자동화. Designed & Developed by 민원규.
+    © 2025 YourSiteName. Designed & Developed by <a href="https://yourportfolio.com" target="_blank">YourName</a>.
 </div>
 """
 
-# 푸터 렌더링
 st.markdown(footer_html, unsafe_allow_html=True)
+
 
 # 세션 상태 초기화 (최초 실행 시)
 if "images" not in st.session_state:
